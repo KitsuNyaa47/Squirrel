@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Squirrel Quotes - Home</title>
+    <link rel="stylesheet" href="static/style_quote.css">
+</head>
+
+<body>
+
+<header>
+   <h1>Squirrel Quotes</h1>
+    <h2>A Website for Squirrel Enthusiasts to Brighten Up Their Day</h2>
+</header>
+<hr>
+
+<img src="static/squirrel_eating.jpg" alt="Squirrel" width="500" height="360">
+<h6>Image source: https://iowredsquirreltrust.co.uk/the-first-three-months-of-a-baby-red-squirrels-life</h6>
+
+<main>
+
+    <h3>🐾 Squirrel quote of the day: 🐾</h3>
+    <form method="post">
+        <button type="submit">Generate a Quote</button>
+    </form>
+    {% if quote %}
+        <div class="quote-box">
+            <p>{{ quote }}</p>
+        </div>
+    {% endif %}
+</main>
+
+</body>
+</html>
