@@ -14,7 +14,7 @@ quotes = ["Every tree is a playground to the spirited squirrel.",
           "A squirrel knows that nature's abundance lies in resourcefulness.",
           "Success is calculated risk, like a squirrel's leap across the expanse of air."]
 
-@app.route('/quote', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 
 def quote():
     selected_quote = None
